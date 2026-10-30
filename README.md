@@ -95,7 +95,7 @@ If it does, the mathematical core is behaving as expected.
 
 ---
 
-# 5. Run all Phase 1 demos
+# 5. Run all demos
 
 Run:
 
@@ -256,34 +256,8 @@ Outputs:
 
 ---
 
-# 7. Recommended order for YOU to study the code
 
-Do not try to understand everything simultaneously.
-
-Study in this order:
-
-1. `physray/vector.py`
-2. `physray/ray.py`
-3. `physray/geometry.py`
-4. `physray/camera.py`
-5. the M0 parts of `physray/renderer.py`
-6. `reflect()` in `physray/optics.py`
-7. `refract()` in `physray/optics.py`
-8. Snell tests in `tests/test_phase1.py`
-9. `fresnel_dielectric()`
-10. Fresnel tests
-11. `sellmeier_index()`
-12. Sellmeier tests
-13. `physray/lens.py`
-14. M4 functions in `physray/analysis.py`
-
-A good rule is:
-
-    equation -> small function -> automated test -> visual demonstration
-
----
-
-# 8. First modifications to try yourself
+# 7. First modifications to try yourself
 
 ### Experiment A — move a sphere
 
@@ -335,7 +309,7 @@ You should generally see the outer spherical-aberration contribution shrink.
 
 ---
 
-# 9. Important scientific limitations of this Phase 1 implementation
+# 9. Important scientific limitations of this implementation
 
 This is a learning/portfolio implementation, not Zemax/Code V.
 
@@ -353,19 +327,5 @@ Current simplifications include:
 - no diffraction or wavefront propagation,
 - no MTF calculation yet.
 
-Those limitations are useful to document rather than hide.
-
 ---
 
-# 10. What Phase 2 would add
-
-Phase 2 can later extend the same architecture with:
-
-- complex refractive index n + ik,
-- Beer–Lambert absorption,
-- Drude metal/free-carrier response,
-- Tauc semiconductor absorption edge,
-- Kramers–Kronig checks,
-- thin-film transfer matrices.
-
-But do not start Phase 2 until you can explain and validate Phase 1.
